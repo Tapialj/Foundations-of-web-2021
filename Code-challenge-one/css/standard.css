@@ -1,0 +1,13 @@
+nav{
+    background-color: blue;
+}
+
+a{
+    color: cyan;
+    margin: 10px;
+}
+
+.content{
+    font-size: 14pt;
+    font-style: italic;
+}
