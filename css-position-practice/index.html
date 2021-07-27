@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Position Practice</title>
+        <link rel="stylesheet" href="standard.css"/>
+    </head>
+
+    <body>
+        <div class="static">
+            <h1>Static</h1>
+
+            <b>Static</b> is the default value. An element with the position static; is not <i>positioned</i> in any special way. A static element is said to be NOT postioned and an element with its position set to anything else is said to be positioned static.
+        </div>
+
+        <div class="relative1">
+            <h1>Relative</h1>
+
+            Setting the <i>top, bottom, left, and right</i> properties of a <b>relatively-positioned</b> element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        </div>
+
+        <div class="relative2">
+            <h1>Relative properties</h1>
+
+            Setting the <i>top, bottom, left, and right</i> properties of a <b>relatively-positioned</b> element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        </div>
+
+        <div class="fixed">
+            A fixed element is positioned relative to the viewport, which means it always stays in the same place EVEN if the page is scrolled. As with relative, the top, right, bottom, and left properties are used.
+            
+            <h1>fixed</h1>
+
+            A fixed element is positioned relative to the viewport, which means it always stays in the same place EVEN if the page is scrolled. As with relative, the top, right, bottom, and left properties are used.
+        
+        </div>
+
+        <div class="absolute">
+            Absolute is the trickiest position value. Absolute behaves like <i>fixed</i> except <i>relative</i> to the nearest postioned ancestor instead of relative to the viewport. If an absolutely-postioned element has no positioned ancestors, it uses the document body, and still moves along with the page scrolling. Remember, a "positioned" element is one whose position is anything except static.
+
+            <h1>Absolute</h1>
+
+            This element is <b>absolutely-positioned</b>. It's positioned <b>relative</b> to its parent.
+        </div>
+
+        <div class="relative3">
+            <h1>relative ancestor</h1>
+
+            This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.
+
+            <div class="absolute">
+                Absolute is the trickiest position value. Absolute behaves like <i>fixed</i> except <i>relative</i> to the nearest postioned ancestor instead of relative to the viewport. If an absolutely-postioned element has no positioned ancestors, it uses the document body, and still moves along with the page scrolling. Remember, a "positioned" element is one whose position is anything except static.
+    
+                <h1>Absolute</h1>
+    
+                This element is <b>absolutely-positioned</b>. It's positioned <b>relative</b> to its parent.
+            </div>
+        </div>
+    </body>
+</html>
