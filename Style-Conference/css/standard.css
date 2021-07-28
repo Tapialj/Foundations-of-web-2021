@@ -132,7 +132,7 @@ table {
 }
 
 /**
-*Grid
+*   Grid
 */
 
 *, *:before, *:after {
@@ -157,7 +157,17 @@ h1, h3, h4, h5, p {
 }
 
 /**
-*Typography
+*   Custom Style
+*/
+
+body {
+	background: #11073fe3;
+	color: rgb(39, 58, 110);
+	font: 300 16px/22px “Lato”, “Open Sans”, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+}
+
+/**
+*   Typography
 */
 
 .btn {
