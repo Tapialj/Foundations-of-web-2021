@@ -13,8 +13,10 @@ header, section, aside, footer {
 }
 
 section {
-    float: left;
+    display: inline-block;
+    margin: 0 1.5%;
     width: 30%;
+    margin-bottom: 10px;
 }
 
 footer {

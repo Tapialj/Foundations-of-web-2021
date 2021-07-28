@@ -1,23 +1,15 @@
-code {
-    background: #2db34a;
-    border-radius: 6px;
-    color: #fff;
-    display: block;
-    font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-    padding: 24px 15px;
-    text-align: center;
+html, body {
+    background-color: lavender;
+    margin: 0;
+    color: black;
+    font-size: 2.8vh;
 }
 
-header, section, aside, footer {
-    margin: 0 1.5% 24px 1.5%;
-}
-
-section {
-    float: left;
-    width: 30%;
-}
-
-footer {
-    /*clear: both;*/
-    margin-bottom: 0;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background-color: lime;
 }
