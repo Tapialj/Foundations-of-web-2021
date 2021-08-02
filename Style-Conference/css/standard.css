@@ -156,7 +156,16 @@ h1, h3, h4, h5, p {
 }
 
 .hero {
+    line-height: 44px;
     padding: 22px 80px 66px 80px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 24px;
 }
 
 .logo {
@@ -190,6 +199,8 @@ h1, h3, h4, h5, p {
 */
 
 .primary-footer {
+    color: #6c89db;
+    font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
@@ -240,4 +251,62 @@ body {
 .btn-alt {
     border: 1px solid gray;
     padding: 10px 30px;
+}
+
+body{
+    color: #273a6e;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvitica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #4568c9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    color: #6c89db;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+a {
+    color: #6c89db;
+}
+
+a:hover {
+    color: #a9b2b9;
+}
+
+.tagline {
+    margin: 66px 0 22px 0;
+}
+
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
 }
