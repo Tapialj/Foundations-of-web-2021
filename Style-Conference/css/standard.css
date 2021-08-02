@@ -158,6 +158,7 @@ h1, h3, h4, h5, p {
 .hero {
     line-height: 44px;
     padding: 22px 80px 66px 80px;
+    text-align: center;
 }
 
 .hero h2 {
@@ -166,6 +167,7 @@ h1, h3, h4, h5, p {
 
 .hero p {
     font-size: 24px;
+    font-weight: 100;
 }
 
 .logo {
@@ -239,6 +241,14 @@ body {
 }
 
 /**
+*   Navigation
+*/
+
+.nav {
+    text-align: right;
+}
+
+/**
 *   Typography
 */
 
@@ -280,6 +290,7 @@ h5 {
     color: #4568c9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h1, h2, h3, h4 {
@@ -296,19 +307,27 @@ cite, em {
 
 a {
     color: #6c89db;
+    text-decoration: none;
 }
 
 a:hover {
     color: #a9b2b9;
 }
 
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
 .tagline {
     margin: 66px 0 22px 0;
+    text-align: right;
 }
 
 .primary-nav {
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .teaser a:hover h3 {
