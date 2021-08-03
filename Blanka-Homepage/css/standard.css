@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    color: white;
+}
+
+header {
+    background-color: #392180;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+header > span {
+    margin-left: 6vw;
+}
+
+nav {
+    margin-right: 6vw;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:hover {
+    color: hotpink;
+}
+
+.main {
+    background-image: url(../images/background.jpeg);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    font-family: 'League Script', cursive;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+#hire {
+    position: absolute;
+    top: 65%;
+    left: 43%;
+    background-color: hotpink;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.main > a {
+    color: white;
+    text-decoration: none;
+}
+
+.main > a:hover {
+    color: #392180;
+}
