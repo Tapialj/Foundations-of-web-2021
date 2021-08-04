@@ -160,7 +160,19 @@ h1, h3, h4, h5, p {
 }
 
 .hero {
+    line-height: 44px;
     padding: 22px 80px 66px 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: 100;
 }
 
 .logo {
@@ -192,10 +204,24 @@ h1, h3, h4, h5, p {
 }
 
 /**
+*   Primary Header
+*/
+
+.primary-header a {
+    color: #fff;
+}
+
+.primary-header a:hover {
+    color: #a9b2b9;
+}
+
+/**
 *   Primary Footer
 */
 
 .primary-footer {
+    color: #6c89db;
+    font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
@@ -203,6 +229,14 @@ h1, h3, h4, h5, p {
 .primary-footer small {
     float: left;
     font-weight: 400;
+}
+
+.primary-footer a {
+    color: #fff;
+}
+
+.primary-footer a:hover {
+    color: #a9b2b9;
 }
 
 /**
@@ -234,6 +268,59 @@ body {
 }
 
 /**
+*   Rows
+*/
+
+.row {
+    background: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt {
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px 0;
+}
+
+.row, .row-alt {
+    min-width: 960px;
+}
+
+/**
+*   Leads
+*/
+
+.lead {
+    text-align: center;
+}
+
+.lead p {
+    font-size: 21px;
+    line-height: 33px;
+}
+
+/**
+*   Navigation
+*/
+
+.nav {
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+/**
 *   Typography
 */
 
@@ -241,9 +328,106 @@ body {
     border: 5px;
     display: inline-block;
     margin: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid gray;
+    border: 1px solid #fff;
     padding: 10px 30px;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: #648880;
+}
+
+body{
+    color: #273a6e;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvitica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #4568c9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    color: #6c89db;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+a {
+    color: #6c89db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a9b2b9;
+}
+
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
+.tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
+}
+
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
+
+/**
+*   Speakers
+*/
+
+.speaker-info {
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
+}
+
+.speaker {
+    margin-bottom: 44px;
 }
