@@ -2,9 +2,17 @@ form {
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
     width: 50vw;
+}
+
+fieldset {
     display: flex;
+    flex-direction: column;
 }
 
 label {
     color: rgb(8, 80, 32);
+}
+
+.input-change {
+    box-shadow: 2px 3px 8px rgb(10, 4, 66);
 }
