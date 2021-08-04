@@ -13,6 +13,6 @@ label {
     color: rgb(8, 80, 32);
 }
 
-.input-change {
+#submit {
     box-shadow: 2px 3px 8px rgb(10, 4, 66);
 }
