@@ -1,0 +1,10 @@
+form {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50vw;
+    display: flex;
+}
+
+label {
+    color: rgb(8, 80, 32);
+}

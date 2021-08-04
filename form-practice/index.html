@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Practice</title>
+
+        <link rel="stylesheet" href="standard.css"/>
+    </head>
+
+    <body>
+        <h2>Create an account</h2>
+
+        <form action="/Form-Practice" metion="post">
+            <fieldset>
+                <legend>User Information</legend>
+
+                <label for="email">Email:</label>
+                <input required type="text" name="email" placeholder="name@domain.com">
+
+                <br/><br/><br/>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input required type="text" name="password" placeholder="password">
+                </div>
+
+                <br/><br/>
+
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <select name="age" id="age">
+                        <!--disabled makes it unselectable, selected makes it the chosen option at first, they will need to change age-->
+                        <option disabled selected="selected" value=" ">-- Select Age --</option>
+                        <option value="group1">Under 18</option>
+                        <option value="group2">18 - 30</option>
+                        <option value="group3">31 - 50</option>
+                        <option value="group4">51 +</option>
+                    </select>
+                </div>
+
+                <br/><br/>
+
+                <div class="about-info">
+                    <label for="about">Tell us a little about yourself</label>
+                    <br/>
+                    <textarea name="about" id="about" placeholder="Tell us what you enjoy!" row="5" column="40"></textarea>
+                </div>
+
+                <p>
+                    <input type="checkbox" class="input-change" name="accept-tos" value="yes">I agree to the
+                    <a href="#tos" target="_blank">Terms of Service</a>
+                </p>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
