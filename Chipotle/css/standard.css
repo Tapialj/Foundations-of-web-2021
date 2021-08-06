@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.75vh;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    z-index: 2;
+}
+
+.logo {
+    float: left;
+    top: -115%;
+    left: 1.5%;
+    margin-top: 0;
+    margin-left: 0;
+    transform: scale(.35);
+    position: absolute;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.primary-nav {
+    margin-left: 15vw;
+}
+
+.primary-nav > a {
+    margin: 5px;
+}
+
+nav > a {
+    color: #533a2e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > a:hover {
+    color: #b23c36;
+}
+
+.order > a {
+    margin: 10px;
+}
+
+.main {
+    background-image: url(../images/hw-background.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tagline {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#tagline-desc {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+section, section > h1 > a, section > a {
+    color: white;
+}
+
+section:hover, section > h1 > a:hover, section > a:hover {
+    color: #b23c36;
+}
+
+.order {
+    text-align: right;
+    margin-right: 21vw;
+}
+
+.order > a {
+    background-color: #d2d2ca;
+    padding: 7px;
+}
+
+.options {
+    text-align: right;
+    margin-right: 20vw;
+    text-transform: none;
+}
+
+.options > a {
+    margin: 15px;
+}
+
+.hero {
+    background-color: #533a2e;
+    padding: 10px;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: 10;
+}

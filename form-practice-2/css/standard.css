@@ -30,6 +30,7 @@ section {
     background-color: rgb(171, 220, 250);
     padding: 10px;
     width: 100%;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-content: center;
 }
