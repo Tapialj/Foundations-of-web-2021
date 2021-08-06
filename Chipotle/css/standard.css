@@ -86,6 +86,10 @@ a {
     margin-top: 0;
 }
 
+#search {
+    padding-right: 1px;
+}
+
 section, section > h1 > a, section > a {
     color: white;
 }
@@ -101,7 +105,8 @@ section:hover, section > h1 > a:hover, section > a:hover {
 
 .order > a {
     background-color: #d2d2ca;
-    padding: 7px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .options {
