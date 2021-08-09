@@ -49,6 +49,14 @@ nav > a:hover {
     color: #b23c36;
 }
 
+section, section > h1 > a, section > a {
+    color: white;
+}
+
+section:hover, section > h1 > a:hover, section > a:hover {
+    color: #b23c36;
+}
+
 .order > a {
     margin: 10px;
 }
@@ -88,14 +96,6 @@ a {
 
 #search {
     padding-right: 1px;
-}
-
-section, section > h1 > a, section > a {
-    color: white;
-}
-
-section:hover, section > h1 > a:hover, section > a:hover {
-    color: #b23c36;
 }
 
 .order {
