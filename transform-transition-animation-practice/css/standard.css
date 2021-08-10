@@ -1,0 +1,184 @@
+html, body {
+    height: 100vh;
+}
+
+/** how to keyframe
+.element {
+    height: 100vh;
+    width: 100vw;
+    animation: pulse 5s infinite;
+    animation-duration: 5s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {background-color: #001f3f;}
+    100% {background-color: #ff4136;}
+}
+*/
+
+
+/** with and without transition transform. Used with index.html
+.wrap {
+    margin: 50px;
+  }
+  
+.container {
+    display: inline-block;
+    width: 300px;
+}
+  
+h1 {
+    color: lightgray;
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+.box {
+    border-radius: 5px;
+    height: 40px;
+    margin: 50px auto;
+    width: 80px;
+}
+
+.wrap:hover .box {
+    transform: scale(2);
+}
+  
+.box1 {
+    background: cyan;
+}
+  
+.box2 {
+    background: #2b3f53;
+    transition: all 1s;
+}
+*/
+
+/**transition duration (required) times, this one could be used with animation to make loading animation. Code is inside indx.html
+.wrap {
+    margin: 50px;
+}
+  
+.container {
+    display: inline-block;
+    width: 150px;
+}
+  
+h1 {
+    color: lightgray;
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px;
+    text-align: center;
+}
+  
+.box {
+    border-radius: 50%;
+    height: 40px;
+    margin: 50px auto;
+    width: 40px;
+}
+
+.wrap:hover .box {
+    transform: scale(2);
+}
+  
+.box1 {
+    background: #60D4C8;
+    transition: all 300ms;
+}
+  
+.box2 {
+    background: #46BAAF;
+    transition: all 1s;
+}
+  
+.box3 {
+    background: #3EA69B;
+    transition: all 3s;
+}
+*/
+
+/**Transition timing delay, code is in index.html. All different types of timing delays.
+.container {
+    margin: 100px;
+}
+  
+.circle, .circle5, .circle4, .circle3, .circle2, .circle1, .circle0 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.container:hover .circle, .container:hover .circle5, .container:hover .circle4, .container:hover .circle3, .container:hover .circle2, .container:hover .circle1, .container:hover .circle0 {
+    transform: translateX(200px);
+}
+  
+.circle0 {
+    background: PaleTurquoise;
+    transition: all 1.5s linear;
+}
+  
+.circle1 {
+    background: salmon;
+    transition: all 1.5s ease;
+}
+  
+.circle2 {
+    background: lightskyblue;
+    transition: all 1.5s ease-in;
+}
+  
+.circle3 {
+    background: khaki;
+    transition: all 1.5s ease-out;
+}
+  
+.circle4 {
+    background: cyan;
+    transition: all 1.5s ease-in-out;
+}
+  
+.circle5 {
+    background: thistle;
+    transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+}
+*/
+
+
+.container {
+    margin: 100px;
+}
+  
+.box {
+    background: steelblue;
+    border-radius: 5px;
+    display: inline-block;
+    height: 80px;
+    margin: 20px;
+    width: 80px;
+}
+
+.container:hover .box {
+    transform: scale(1.4);
+}
+  
+.box1 {
+    transition: all 1.3s;
+}
+  
+.box2 {
+    transition: all 1.3s 0.5s;
+}
+  
+.box3 {
+    transition: all 1.3s 1s;
+}

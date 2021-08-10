@@ -1,0 +1,109 @@
+/**
+*   Scale
+*/
+.square {
+    background: darkturquoise;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    transition: transform 1s;
+    width: 100px;
+}
+
+/**
+*   Rotate
+*/
+.square:hover {
+    transform: scale(2);
+}  
+
+.droplet {
+    background: mediumaquamarine;
+    border-radius: 2% 50%;
+    height: 100px;
+    margin: 100px;
+    transition: all 3s;
+    transition-timing-function: ease-in-out;
+    width: 100px;
+}
+
+.droplet:hover {
+    transform: rotate(1080deg);
+}
+
+/**
+*   Translate
+*/
+.square1 {
+    background: #00aa9d;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    transition: transform 0.8s;
+    width: 150px;
+}
+  
+.square2 {
+    background: #2b3f53;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+}
+
+.square2:hover {
+    transform: translate(20px, 20px);
+}
+
+/**
+*   Skew
+*/
+.square3 {
+    background: Khaki;
+    border-radius: 5px;
+    height: 150px;
+    margin-left: 400px;
+    margin-top: 100px;
+    transition: transform 1s;
+    width: 150px;
+}
+
+.square3:hover {
+    transform: skewX(-20deg);
+}
+
+/**
+*   Transform Origin-Changes anchor point for rotate in this
+*/
+.droplet2 {
+    background: skyblue;
+    border-radius: 5px 50%;
+    height: 100px;
+    margin: 150px;
+    transform-origin: left top;
+    transition: transform 3s;
+    width: 100px;
+}
+
+.droplet2:hover {
+    transform: rotate(500deg);
+}
+
+/**
+*   Combination
+*/
+.square-combo {
+    background: salmon;
+    border-radius: 5px;
+    height: 75px;
+    margin: 100px;
+    transition: transform 1s;
+    width: 75px;
+}
+
+.square-combo:hover {
+    transform: rotate(90deg) scale(1.75) translateX(50px);
+}  
