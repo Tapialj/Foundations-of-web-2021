@@ -1,0 +1,29 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #000060;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+
+/**
+font-family: 'Quicksand', sans-serif;
+font-family: 'Sarabun', sans-serif;
+*/
