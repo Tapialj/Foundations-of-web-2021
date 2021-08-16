@@ -21,7 +21,122 @@ nav {
     z-index: 2;
 }
 
+a {
+    color: blue;
+}
 
+nav a {
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 1px solid gray;
+    text-align: center;
+    color: #6060ff;
+    transition: color .5s;
+}
+
+nav > a:first-child {
+    border-left: 0;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px #808080;
+}
+
+header {
+    position: relative;
+    margin-top: 3em;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+
+}
+
+.slideshow-images {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.slideshow-images:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000050;
+    opacity: 0.8;
+}
+
+.slideshow-images > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideshow 36s linear infinite;
+}
+
+.slideshow-images img:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.slideshow-images img:nth-child(3) {
+    animation-delay: 12s;
+}
+
+.slideshow-images img:nth-child(4) {
+    animation-delay: 18s;
+}
+
+.slideshow-images img:nth-child(5) {
+    animation-delay: 24s;
+}
+
+.slideshow-images img:nth-child(6) {
+    animation-delay: 30s;
+}
+
+@keyframes slideshow {
+    0% {opacity: 0;}
+    1.38% {opacity: 1;}
+    15.27% {opacity: 1;}
+    16.65% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+header > .content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translatey(-50%);
+}
 
 /**
 font-family: 'Quicksand', sans-serif;
