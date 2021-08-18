@@ -25,6 +25,11 @@ a {
     color: blue;
 }
 
+#mobile-menu {
+    display: none;
+    /* visibility: hidden; do similar thing. display is completely removed while visibility just hide it but still reserve space for the object.*/
+}
+
 nav a {
     text-decoration: none;
     padding-left: 1em;
@@ -216,6 +221,43 @@ article > h2 {
         max-width: 80vw;*/
         width: 80vw;
         margin-bottom: 2em;
+    }
+
+    #mobile-menu {
+        display: block;
+        position: fixed;
+        right: 2vw;
+        top: 0;
+        font-size: 2rem;
+        color: white;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        right: 2vw;
+        top: 4rem;
+        font-size: 1em;
+        align-items: center;
+    }
+
+    #mobile-menu:target ~ nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    nav a {
+        border: 0;
+        padding: .5em;
+    }
+    
+    nav > div {
+        margin-top: 1em;
+    }
+
+    header {
+        margin-top: 0;
     }
 }
 
