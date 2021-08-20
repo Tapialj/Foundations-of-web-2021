@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 2vh;
+    color: white;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header > span {
+    margin-left: 3vw;
+    font-size: 2em;
+    line-height: 5rem;
+    vertical-align: middle;
+}
+
+header > nav > a:last-child {
+    margin-right: 3vw;
+}
+
+header > nav > a:nth-last-child(2) {
+    margin-left: 3vw;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+    line-height: 5em;
+    vertical-align: middle;
+}
+
+main {
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% + 2em));
+    white-space: nowrap;
+    text-align: center;
+}
+
+main a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 20ch;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, blue, lightblue, turquoise);
+    border-image-slice: 30%;
+    display: inline-block;
+    color: inherit;
+    text-shadow: 1px 1px #303030;
+    text-decoration: none;
+}
+
+main a:hover {
+    border-width: 0;
+    padding-top: calc(.5em + 3px);
+    padding-bottom: calc(.5em + 3px);
+    width: calc(20ch + 5px);
+    background: linear-gradient(90deg, blue, lightblue, turquoise);
+}
+
+.teaser {
+    position: absolute;
+    display: flex;
+    top: 100vh;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+}
+
+.teaser > div {
+    position: relative;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.teaser > div:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #404040;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    top: 15%;
+}
+
+.teaser > div:last-child::after {
+    border-right: 0;
+}
+
+.teaser > div > h2 > i {
+    font-size: 0.8em;
+    color: turquoise;
+    margin-right: 0.25em;
+}
+
+#home {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100vh;
+}
+
