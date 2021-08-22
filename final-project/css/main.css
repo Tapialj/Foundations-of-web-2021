@@ -64,7 +64,7 @@ header {
     width: 100%;
     height: 12vh;
     padding-top: 1vh;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     z-index: 2;
     /*background-image: linear-gradient(45deg, #614051, #e52065, #614051);*/
 }
@@ -97,7 +97,7 @@ header > h1, header > nav {
     border: 2px solid #5a1354;
     border-radius: 5px;
     display: inline-block;
-    background: linear-gradient(to right, #5a1354 50%, #ffffff 50%);
+    background: linear-gradient(to right, #5a1354 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position .5s ease-out;
@@ -132,7 +132,7 @@ header > h1, header > nav {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: #ffffff;
     z-index: -1;
 }
@@ -143,24 +143,46 @@ header > h1, header > nav {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: #ffffff;
     opacity: 0.6;
 }
 
-.container {
+.hero-content > h1, .hero-content > h3 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #e52065;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-content > h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+
+}
+
+.hero-content > h3 {
+    font-size: 1.2rem;
+    padding-top: 12vh;
+    font-weight: 500;
+}
+
+.btn-container {
     position: absolute;
     display: flex;
-    top: 80vh;
+    top: 50vh;
     left: 50%;
     width: 80%;
     transform: translate(-50%, -50%);
     justify-content: space-between;
 }
 
-.container > div {
+.btn-container > div {
     position: relative;
-    
 }
 
 .hero-btn {
@@ -191,6 +213,8 @@ header > h1, header > nav {
 .hero-btn > a:hover {
     color: #e52065;
 }
+
+
 
 /**
 *   Slideshow animation
@@ -231,6 +255,36 @@ header > h1, header > nav {
     25% {opacity: 0;}
 
     100% {opacity: 0;}
+}
+
+/**
+* Grid and Featured
+*/
+
+.featured-bg {
+    position: absolute;
+    left: 0;
+    top: 80vh;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/salon-product-bg2.jpg);
+    filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    z-index: -1;
+}
+
+.featured-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+    background-color: #3a3535;
+    opacity: 0.6;
 }
 
 /*
