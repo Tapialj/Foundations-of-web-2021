@@ -175,7 +175,7 @@ header > h1, header > nav {
 .btn-container {
     position: absolute;
     display: flex;
-    top: 50vh;
+    top: 55vh;
     left: 50%;
     width: 80%;
     transform: translate(-50%, -50%);
