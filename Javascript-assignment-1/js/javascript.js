@@ -9,8 +9,10 @@ console.log("count is a " + typeof(count) + " type" + "\nsentence is a " + typeo
 
 
 //Part 3
-let globalVar1 = 6;
-let globalVar2 = 8;
+{
+    var globalVar1 = 6;
+    var globalVar2 = 8;
+}
 
 function add(num1, num2) 
 {
