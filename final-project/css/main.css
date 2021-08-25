@@ -316,6 +316,7 @@ header > h1, header > nav {
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(4px);
+    /*figure out how to remove fixed background image here, might put it over in html*/
 }
 
 
