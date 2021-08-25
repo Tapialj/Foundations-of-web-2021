@@ -56,17 +56,15 @@ html, body {
 */
 
 header {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
-    height: 12vh;
+    height: 5rem;
     padding-top: 1vh;
-    /*background-color: #ffffff;*/
     z-index: 2;
-    /*background-image: linear-gradient(45deg, #614051, #e52065, #614051);*/
+    background-image: linear-gradient(45deg, rgba(97, 64, 81, 0.95), rgba(229, 32, 101, 0.80),rgba(97, 64, 81, 0.90));
 }
 
 header > h1 {
@@ -75,6 +73,8 @@ header > h1 {
     font-family: 'Just Another Hand', cursive;
     font-size: 2rem;
     font-weight: 800;
+    /*Maybe remove this and change text to different color
+    */
     background: linear-gradient(45deg, #5a1354, #e52065, #5a1354);
     background-clip: text;
     -webkit-background-clip: text;
@@ -123,19 +123,39 @@ header > h1, header > nav {
     color: #e52065;
 }
 
+/**
+*   Footer
+*/
+
+.footer-nav {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
 
 /**
 *   Hero
 */
 
-.salon-slideshow {
-    position: absolute;
+.hero {
+    position: relative;
     left: 0;
     top: 0;
     width: 100%;
     height: 80vh;
     background-color: #ffffff;
-    z-index: -1;
 }
 
 .salon-slideshow::after {
@@ -189,7 +209,6 @@ header > h1, header > nav {
 .hero-btn {
     border: 3px solid #5a1354;
     border-radius: 10px;
-    /*display: inline-block;*/
     padding: 2vh 3vw;
     background: linear-gradient(to right, #5a1354 50%, transparent 50%);
     background-size: 200% 100%;
@@ -262,20 +281,63 @@ header > h1, header > nav {
 * Grid and Featured
 */
 
-.featured-bg {
+.home {
+    position: relative;
+    display: block;
+}
+
+.home::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5;
     position: absolute;
+    top: 0;
     left: 0;
-    top: 80vh;
     width: 100%;
     height: 100%;
-    background-image: url(../images/salon-product-bg2.jpg);
-    filter: blur(4px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 100%;
     z-index: -1;
 }
 
+.home > h1 {
+    background-color: #d61686;
+    color: #5a1354;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+#featured::before {
+    background-image: url(../images/salon-product-bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+}
+
+
+.featured-bg {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 10vh 2rem 10vh;
+    /*position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;*/
+    /*background-image: url(../images/salon-product-bg2.jpg);
+    filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;*/
+}
+
+
+/*
 .featured-bg::after {
     content: "";
     position: absolute;
@@ -286,6 +348,30 @@ header > h1, header > nav {
     filter: blur(0);
     background-color: #3a3535;
     opacity: 0.6;
+}
+*/
+
+.product {
+        
+}
+
+.product  a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.product img {
+    border-radius: 5px;
+    height: 30vh;
+}
+
+.product p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.product  a:hover  p {
+    color: #5a1354;
 }
 
 /*
