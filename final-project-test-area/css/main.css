@@ -1,3 +1,5 @@
+
+/*
 #wrapD3Cube {
     width: 250px;
     height: 213px;
@@ -20,18 +22,20 @@
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-
+*/
+/*
 #D3Cube > div {
     position: absolute;
     /*-webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;*/
-    width: 112px;
+/*    width: 112px;
     height: 112px;
     float: left;
     overflow: hidden;
     opacity: 0.85;
 }
-
+*/
+/*
 #side1 {
     transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
     background-color: #FFF;
@@ -60,4 +64,71 @@
 #side6 {
     transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
     background-color: #f2f215;
+}
+*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    color: white;
+    text-align: center;
+}
+
+.color1 {
+    background: #5a1354;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color2 {
+    background: #e52065;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color3 {
+    background: #5A1331;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color4 {
+    background: #3D135A;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color5 {
+    background: #a01c70;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color6 {
+    background: #7d1865;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
+}
+
+.color7 {
+    background: #c21e6d;
+    border-radius: 5px;
+    height: 100px;
+    margin: 100px;
+    width: 100px;
 }
