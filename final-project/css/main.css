@@ -99,9 +99,18 @@ header > h1, header > nav {
     padding-bottom: 4vh;
 }
 
+span {
+    z-index: 1;
+}
+
+span > a:hover {
+    box-shadow: 1px 1px 5px 0 #000000;
+    /*transform zoom a little*/
+}
+
 .logo {
     height: 10vh;
-    margin-left: 5vw
+    margin-left: 5vw;
 }
 
 .primary-nav {
@@ -159,20 +168,7 @@ header > h1, header > nav {
     height: 3.1rem;
     padding-top: .75rem;
     padding-bottom: .9rem;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(251, 7, 217, 1) 10%,
-        rgba(186, 12, 248, 1) 20%,
-        rgba(95, 21, 242, 1) 30%,
-        rgba(28, 127, 238, 1) 40%,
-        rgba(47, 201, 226, 1) 50%,
-        rgba(63, 218, 216, 1) 60%,
-        rgba(79, 220, 74, 1) 70%,
-        rgba(208, 222, 33, 1) 80%,
-        rgba(255, 154, 0, 1) 90%,
-        rgba(255, 0, 0, 1) 100%
-    );
+    background-color: #c21e6d;
 }
 
 .primary-footer > a {
@@ -325,7 +321,7 @@ header > h1, header > nav {
 }
 
 /**
-* Grid and Featured
+*   Featured
 */
 
 .home {
@@ -348,7 +344,7 @@ header > h1, header > nav {
 }
 
 .home > h1 {
-    background-color: #7d1865;
+    background-color: #a01c70;
     color: #ffffff;
     text-align: center;
     font-size: 2rem;
@@ -391,7 +387,7 @@ header > h1, header > nav {
 
 
 .product {
-        
+    /*what was I doing with this class?*/
 }
 
 .product  a {
@@ -433,6 +429,21 @@ e52065
 a01c70
 7d1865
 c21e6d
+
+background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(251, 7, 217, 1) 10%,
+        rgba(186, 12, 248, 1) 20%,
+        rgba(95, 21, 242, 1) 30%,
+        rgba(28, 127, 238, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(63, 218, 216, 1) 60%,
+        rgba(79, 220, 74, 1) 70%,
+        rgba(208, 222, 33, 1) 80%,
+        rgba(255, 154, 0, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
 
 background: linear-gradient(
         90deg,
