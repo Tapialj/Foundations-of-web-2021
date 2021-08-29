@@ -10,12 +10,13 @@
     width: 100px;
 }
 
-/**
-*   Rotate
-*/
 .square:hover {
     transform: scale(2);
 }  
+
+/**
+*   Rotate
+*/
 
 .droplet {
     background: mediumaquamarine;

@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
+
     </head>
 
     <body>
@@ -34,5 +35,72 @@
         <div class="color6">#7d1865</div>
         <div class="color7">#c21e6d</div>
 
+        <!-- Source: -->
+        <select id="source" name="source">
+            <option>MANUAL</option>
+            <option>ONLINE</option>
+        </select>
+
+        <!-- Status: -->
+        <select id="status" name="status">
+            <option>OPEN</option>
+            <option>DELIVERED</option>
+        </select>
+        <!--Javascript in main.js-->
+
+        <!--javascrript in head-->
+        <div class="category_div" id="category_div">Source:
+            <select id="source" name="source" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="">Select source</option>
+                <option value="manual">MANUAL</option>
+                <option value="online">ONLINE</option>
+            </select>
+        </div>
+
+        <div class="sub_category_div" id="sub_category_div">Status:
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="status" id="status"><option value="">Select status</option></select>')
+            </script>
+
+            <noscript>
+                <select id="status" name="status">
+                    <option value="open">OPEN</option>
+                    <option value="delivered">DELIVERED</option>
+                </select>
+            </noscript>
+        </div>
+
+        <!--W3 schools example script in main.js-->
+
+        <h1>Cascading Dropdown Example</h1>
+
+        <form name="form1" id="form1" action="/action_page.php">
+            Subjects:
+            <select name="subject" id="subject">
+                <option value="" selected="selected">Select subject</option>
+            </select>
+            <br>
+            <br>
+
+            Topics: 
+            <select name="topic" id="topic">
+                <option value="" selected="selected">Please select subject first</option>
+            </select>
+            <br>
+            <br>
+            
+            Chapters: 
+            <select name="chapter" id="chapter">
+                <option value="" selected="selected">Please select topic first</option>
+            </select>
+            <br>
+            <br>
+            
+            <input type="submit" value="Submit">  
+        </form>
+
+        <input name="somedate" type="date">
+
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
