@@ -60,6 +60,10 @@
                     <h2>Tidi & Healthi Hair</h2>
 
                     <p>
+                        Hours: Mon. - Fri. 9:00 - 6:00
+                    </p>
+
+                    <p>
                         17676 Welch Plaza Ste 4
                         <br>
                         Omaha, NE 68135
@@ -86,12 +90,12 @@
                     <div id="choose-stylist">
                         <label for="stylist">Which Stylist would you like to book? </label>
                         <ul>
-                            <li>
+                            <!--<li>
                                 <input type="radio" name="stylist" value="either" checked>Either
-                            </li>
+                            </li>-->
                             
                             <li>
-                                <input type="radio" name="stylist" value="tristia">Tristia
+                                <input type="radio" name="stylist" value="tristia" checked>Tristia
                             </li>
 
                             <li>
@@ -142,8 +146,10 @@
                     <div id="book-datetime">
                         <p>Select a date and time: </p>
                         <input type="date" name="bookDate" id="bookDate" required>
-                        <input type="time" name="bookTime" id="bookTime" min="09:00" max="18:00" step="3600" required>
-                        <!--<span class="valid-time"></span>-->
+                        <input type="time" name="bookTime" id="bookTime" min="09:00" max="18:00" required>
+
+                        <i id="invalid-time" class="fas fa-times-circle"></i>
+                        <i id="valid-time" class="fas fa-check-circle"></i>
                     </div>
 
                     <div id="comment">

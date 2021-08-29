@@ -603,19 +603,23 @@ iframe {
     font-size: 0.7rem;
     margin-right: 0.3rem;
 }
-/*
-#bookTime:invalid + span:after {
-    position: absolute;
-    content: '✖';
-    padding-left: 5px;
+
+#invalid-time, #valid-time {
+    display: none;
+}
+
+#bookTime:invalid ~ #invalid-time {
+    padding-left: 0.1rem;
+    color: #ff0000;
+    display: inline-block;
 }
   
-#bookTime:valid + span:after {
-    position: absolute;
-    content: '✓';
-    padding-left: 5px;
+#bookTime:valid ~ #valid-time {
+    padding-left: 0.1rem;
+    color: #00ff00;
+    display: inline-block;
 }
-*/
+
 #comment > textarea {
     margin-top: 0.3rem;
     height: 3.5rem;
