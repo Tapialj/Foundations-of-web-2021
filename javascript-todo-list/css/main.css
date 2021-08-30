@@ -1,0 +1,120 @@
+html, body {
+    margin: 0, auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: teal;
+    text-align: center;
+}
+
+/*
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1vh;
+}
+*/
+
+header {
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+header > h1, section > input, ul {
+    position: absolute;
+    width: 20vw;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 3vh));
+}
+
+header > h1 {
+    background-color: turquoise;
+    border: 2px dashed blue;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+section > input {
+    box-shadow: 0 0 5px 2px turquoise;
+    text-align: center;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    transform: translate(-50%, calc(-50% + 11vh));
+    color: cyan;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul {
+    transform: translate(-50%, calc(-50% + 19vh));
+}
+
+li {
+    list-style: none;
+    font-size: 1.4rem;
+    text-align: left;
+    color: #802000;
+}
+
+li:hover {
+    text-decoration: line-through;
+}
+
+
+/**
+*   Vanessa code
+*/
+
+/*
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: hotpink;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+header > h1 {
+    position: absolute;
+    border: 4px dashed purple;
+    padding: 0.5em;
+    background-color: pink;
+    width: 20vw;
+        centering css here
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin-top: 10vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 14px 4px;
+    color: pink;
+}
+
+input:focus {
+    outline: none;
+}
+*/

@@ -80,6 +80,7 @@ header > h1 {
     font-size: 1.5rem;
     font-weight: 800;
     top: 50%;
+    /* CHANGE THIS TO WHAT IS USED IN THE JAVASCRIPT TODO LIST TO MAKE SURE CENTER IS BETTER THAN IT IS HERE*/
     transform: translatey(-50%);
     width: 100%;
     text-align: center;
