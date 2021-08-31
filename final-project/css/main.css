@@ -103,7 +103,7 @@ span {
 }
 
 .logo:hover {
-    transform: scale(1.15);
+    transform: scale(0.95);
 }
 
 .primary-nav {
