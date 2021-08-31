@@ -621,3 +621,11 @@ iframe {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/**
+*   Mobile friendly stuff
+*/
+
+@media only screen and (max-width: 800px) {
+    
+}
