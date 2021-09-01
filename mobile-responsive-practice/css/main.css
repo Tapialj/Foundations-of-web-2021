@@ -4,6 +4,9 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 /*
@@ -52,59 +55,7 @@ img {
 *   Grid and Container + Utilities
 */
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid {
-    display: grid;
-    /*fr units are fractions of the grid, 2fr 1fr would be 2/3 and 1/3, 1fr 1fr would be half and half etc.*/
-    grid-template-columns: 1fr 1fr;
-    /* adds a gap between grid elements*/
-    gap: 20px;
-    justify-content: center;
-    /*for align-items you need a height intialized within the same selector for it to work.*/
-    align-items: center;
-    height: 100%;
-}
-
-.card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn-outline {
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-
-.btn:hover {
-    transform: scale(0.98);
-}
+/*These are now in the utilites.css file, can still be here but moved for readability*/
 
 /**
 *   Navbar
@@ -145,6 +96,20 @@ img {
     position: relative;
 }
 
+.showcase::before, .showcase::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    transform: skewy(-1deg);
+    -webkit-transform: skewy(-1deg);
+    -moz-transform: skewy(-1deg);
+    -ms-transform: skewy(-1deg);
+}
+
 .showcase .grid {
     grid-template-columns: 55% 45%;
     gap: 30px;
@@ -183,4 +148,128 @@ img {
 
 .showcase-form input:focus {
     outline: none;
+}
+
+/**
+*   Stats
+*/
+
+.stats {
+    padding-top: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stat .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/**
+*   CLI
+*/
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/**
+*   Cloud
+*/
+
+.cloud .grid {
+    grid-template-columns: 4fr, 3fr;
+}
+
+/**
+*   Languages
+*/
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/**
+*   Social
+*/
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+/**
+*   Tablets and under
+*/
+
+@media(max-width: 768px) {
+    .grid, .showcase .grid, .stats .grid, .cli .grid, .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+/**
+*   Mobile
+*/
+
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
