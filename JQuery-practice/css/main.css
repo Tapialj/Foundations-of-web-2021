@@ -1,0 +1,38 @@
+html {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
+
+.box-change {
+    background-color: #008080;
+}
+
+.box-change-alt {
+    background-color: #ff8c00;
+}
+
+.box-change-2 {
+    background-color: turquoise;
+}
+
+.box-change-2-alt {
+    background-color: orangered;
+}
+
+#button-change {
+    background-color: plum;
+}
+
+#button-change-2 {
+    background-color: rebeccapurple;
+}
+
+.button-style-change {
+    background-color: seagreen;
+    color: #8b392e;
+}
+
+.button-style-change-toggle {
+    background-color: #8b392e;
+    color: seagreen;
+}
