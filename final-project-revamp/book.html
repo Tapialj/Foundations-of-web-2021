@@ -66,114 +66,116 @@
             </div>
         </header>
 
-        <section class="book home grid">
-            <section>
-                <div class="info-container">
-                    <h2>Tidi & Healthi Hair</h2>
+        <section class="book home">
+            <div class="container grid">
+                <section>
+                    <div class="info-container">
+                        <h2>Tidi & Healthi Hair</h2>
 
-                    <p>
-                        Hours: Mon. - Fri. 9:00 - 6:00
-                    </p>
+                        <p>
+                            Hours: Mon. - Fri. 9:00 - 6:00
+                        </p>
 
-                    <p>
-                        20232 Manderson St
-                        <br>
-                        Elkhorn, NE 68022
-                    </p>
+                        <p>
+                            20232 Manderson St
+                            <br>
+                            Elkhorn, NE 68022
+                        </p>
 
-                    <p>(402) 555-5555</p>
-                </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7525804537127!2d-96.23415004850527!3d41.29248897917126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793ef5fe5d789a9%3A0x62baec40e848eb77!2sGreat%20Clips!5e0!3m2!1sen!2sus!4v1630466069648!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-
-            <form action="#" method="get/post">
-                <fieldset class="book-container">
-                    <legend>Book An Appointment</legend>
-
-                    <div id="personal-info">
-                        <label for="firstName">First Name: </label>
-                        <input type="text" name="firstName" id="first-name" placeholder="First" required>
-
-                        <label for="lastName">Last Name: </label>
-                        <input type="text" name="lastName" id="last-name" placeholder="Last" required>
+                        <p>(402) 555-5555</p>
                     </div>
 
-                    <div id="choose-stylist">
-                        <label for="stylist">Which Stylist would you like to book? </label>
-                        <ul>
-                            <!--<li>
-                                <input type="radio" name="stylist" value="either" checked>Either
-                            </li>-->
-                            
-                            <li>
-                                <input type="radio" name="stylist" value="tristia" checked>Tristia
-                            </li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7525804537127!2d-96.23415004850527!3d41.29248897917126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793ef5fe5d789a9%3A0x62baec40e848eb77!2sGreat%20Clips!5e0!3m2!1sen!2sus!4v1630466069648!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
 
-                            <li>
-                                <input type="radio" name="stylist" value="heidi">Heidi
-                            </li>
-                        </ul>
-                    </div>
+                <form action="#" method="get/post">
+                    <fieldset class="book-container">
+                        <legend>Book An Appointment</legend>
 
-                    <div id="service-select">
-                        <label for="service">Services requested: </label>
-                        <select required>
-                            <option disabled selected="selected" value=" ">-- Cut --</option>
-                            <option value="none">None</option>
-                            <option value="womens-cut">Womens Cut</option>
-                            <option value="mens-cut">Mens Cut</option>
-                            <option value="trim">Bang/Neck Trim</option>
-                        </select>
+                        <div id="personal-info">
+                            <label for="firstName">First Name: </label>
+                            <input type="text" name="firstName" id="first-name" placeholder="First" required>
 
-                        <select required>
-                            <option disabled selected="selected" value=" ">-- Shampoo+ --</option>
-                            <option value="none">None</option>
-                            <option value="shampoo">Add Shampoo</option>
-                            <option value="shampoo-massage">Add Shampoo and Scalp Massage (Tristia Only)</option>
-                            <option value="shampoo-blowout">Add Shampoo with Blow Out</option>
-                        </select>
+                            <label for="lastName">Last Name: </label>
+                            <input type="text" name="lastName" id="last-name" placeholder="Last" required>
+                        </div>
 
-                        <select required>
-                            <option disabled selected="selected" value=" ">-- Style --</option>
-                            <option value="none">None</option>
-                            <option value="regular">Regular Style</option>
-                            <option value="formal">Long Hair Formal</option>
-                            <option value="braids">Braids</option>
-                        </select> 
+                        <div id="choose-stylist">
+                            <label for="stylist">Which Stylist would you like to book? </label>
+                            <ul>
+                                <!--<li>
+                                    <input type="radio" name="stylist" value="either" checked>Either
+                                </li>-->
+                                
+                                <li>
+                                    <input type="radio" name="stylist" value="tristia" checked>Tristia
+                                </li>
 
-                        <select required>
-                            <option disabled selected="selected" value=" ">-- Chemical Service --</option>
-                            <option value="none">None</option>
-                            <option value="whole-head-light">Whole Head Lightening</option>
-                            <option value="whole-head-highlow">Whole Head Highlight/Lowlight</option>
-                            <option value="partial-highlow">Partial Highlight/Lowlight</option>
-                            <option value="color">All Over Color</option>
-                            <option value="root-retouch">Root Color Retouch</option>
-                            <option value="bright-color">Bright Color</option>
-                            <option value="perm">Perm (Heidi Only)</option>
-                        </select>
-                    </div>
+                                <li>
+                                    <input type="radio" name="stylist" value="heidi">Heidi
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div id="book-datetime">
-                        <p>Select a date and time: </p>
-                        <input type="date" name="bookDate" id="bookDate" required>
-                        <input type="time" name="bookTime" id="bookTime" min="09:00" max="18:00" required>
+                        <div id="service-select">
+                            <label for="service">Services requested: </label>
+                            <select required>
+                                <option disabled selected="selected" value=" ">-- Cut --</option>
+                                <option value="none">None</option>
+                                <option value="womens-cut">Womens Cut</option>
+                                <option value="mens-cut">Mens Cut</option>
+                                <option value="trim">Bang/Neck Trim</option>
+                            </select>
 
-                        <i id="invalid-time" class="fas fa-times-circle"></i>
-                        <i id="valid-time" class="fas fa-check-circle"></i>
-                    </div>
+                            <select required>
+                                <option disabled selected="selected" value=" ">-- Shampoo+ --</option>
+                                <option value="none">None</option>
+                                <option value="shampoo">Add Shampoo</option>
+                                <option value="shampoo-massage">Add Shampoo and Scalp Massage (Tristia Only)</option>
+                                <option value="shampoo-blowout">Add Shampoo with Blow Out</option>
+                            </select>
 
-                    <div id="comment">
-                        <label for="comments">Please let us know any comments you have for your appointment: </label>
-                        <textarea name="comments" cols="30" rows="4" placeholder="Comments or Concerns"></textarea>
-                    </div>
+                            <select required>
+                                <option disabled selected="selected" value=" ">-- Style --</option>
+                                <option value="none">None</option>
+                                <option value="regular">Regular Style</option>
+                                <option value="formal">Long Hair Formal</option>
+                                <option value="braids">Braids</option>
+                            </select> 
 
-                    <div id="book-button">
-                        <button type="submit" class="btn btn-book" id="submit">Book Appointment</button>
-                    </div>
-                </fieldset>
-            </form>
+                            <select required>
+                                <option disabled selected="selected" value=" ">-- Chemical Service --</option>
+                                <option value="none">None</option>
+                                <option value="whole-head-light">Whole Head Lightening</option>
+                                <option value="whole-head-highlow">Whole Head Highlight/Lowlight</option>
+                                <option value="partial-highlow">Partial Highlight/Lowlight</option>
+                                <option value="color">All Over Color</option>
+                                <option value="root-retouch">Root Color Retouch</option>
+                                <option value="bright-color">Bright Color</option>
+                                <option value="perm">Perm (Heidi Only)</option>
+                            </select>
+                        </div>
+
+                        <div id="book-datetime">
+                            <p>Select a date and time: </p>
+                            <input type="date" name="bookDate" id="bookDate" required>
+                            <input type="time" name="bookTime" id="bookTime" min="09:00" max="18:00" required>
+
+                            <i id="invalid-time" class="fas fa-times-circle"></i>
+                            <i id="valid-time" class="fas fa-check-circle"></i>
+                        </div>
+
+                        <div id="comment">
+                            <label for="comments">Please let us know any comments you have for your appointment: </label>
+                            <textarea name="comments" cols="30" rows="4" placeholder="Comments or Concerns"></textarea>
+                        </div>
+
+                        <div id="book-button">
+                            <button type="submit" class="btn btn-book" id="submit">Book Appointment</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
         <footer class="primary-footer">

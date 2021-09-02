@@ -536,16 +536,12 @@ header .flex {
     z-index: -1;
 }
 
-.book-left-half {
-    width: 50%;
-    padding: 1.5rem 3rem 1.5rem 6rem;
-    text-align: left;
+.book .container {
+    padding: 1.5rem 0;
 }
 
-.book-right-half {
-    width: 50%;
-    padding: 1.5rem 3rem;
-    text-align: left;
+.book .grid {
+    gap: 30px;
 }
 
 .info-container {
@@ -557,7 +553,11 @@ header .flex {
     display: inline-block;
     border-bottom: 2px solid #5a1331;
 }
-
+/*
+.book form, .book-container {
+    height: 100%;
+}
+*/
 .book-container {
     font-size: 0.8rem;
     border: 2px solid #5a1331;
