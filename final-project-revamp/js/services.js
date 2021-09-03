@@ -1,72 +1,96 @@
 $(function ()
 {
-    
-    var imgID = "#";
+    let baseImgID = "#";
+    let targetImgID = "";
+    let currentImgID = "";
+
+    const hideImageNow = function(imgID) {
+        $(imgID).hide();
+
+        if(currentImgID == imgID)
+        {
+            currentImgID = "";
+        }
+    }
+
+    const hideImageLater = function(imgID, delay) {
+        setTimeout(hideImageNow, delay, imgID);
+    }
+
+    const showImage = function(imgID) {
+        if(currentImgID != "")
+        {
+            hideImageNow(currentImgID);
+        }
+
+        currentImgID = imgID;
+
+        $(imgID).show();
+    }
 
     $("h2").mouseover(function ()
     {
         let mouseText = $(this).attr("class").split(" ")[0];
+        targetImgID = baseImgID;
         
         switch(mouseText)
         {
             case "women-cut":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "men-cut":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "kid-cut":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "trim":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "shampoo":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "blow-out":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "formal":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;    
             case "style":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "braid":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "wh-light":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "wh-hl-ll":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "part-hh-ll":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "color":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "retouch":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "bright-color":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
             case "perm":
-                imgID += mouseText;
+                targetImgID += mouseText;
                 break;
         }
 
-        $(imgID).show();
+        showImage(targetImgID);
     });
 
     $("h2").mouseout(function ()
     {
-        $(imgID).delay(1000).hide(0);
-
-        imgID = "#";
+        hideImageLater(currentImgID, 1000);
     });
 
 })
