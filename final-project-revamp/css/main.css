@@ -448,8 +448,10 @@ header .flex {
 
 .product-info img {
     border-radius: 5px;
-    height: 10rem;
-    margin: auto;
+    /*height: 10rem;*/
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.2rem;
 }
 
 .product-info p {
@@ -466,11 +468,10 @@ header .flex {
     width: 100%;
     height: 100%;
     background-color: rgba(58, 53, 53, 0.3);
-    /*box-shadow: 0px 0px 2px 1px #3a3535;*/
 }
 
 .info-box p {
-    padding: 0;
+    padding: 1rem 0;
 }
 
 .products .grid {
@@ -478,33 +479,185 @@ header .flex {
     gap: 0;
 }
 
-/*
-.left-third {
-    width: 33%;
-    padding: 1.5rem;
-    
-    background-color: rgba(58, 53, 53, 0.3);
-}
-
-.right-twothird {
-    width: 66%;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0px 0px 2px 1px #3a3535;
-    background-color: rgba(58, 53, 53, 0.3);
-}
-*/
 /**
 *   Services
 */
 
+.services {
+    position: relative;
+}
 
+.services::before {
+    background-image: url(../images/stylist-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: blur(4px);
+}
+
+.services::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+    background-color: #302c2c;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.services .container {
+    padding: 0;
+}
+
+.services .grid {
+    gap: 3rem;
+}
+
+.service-list {
+    padding: 10px 0 25px 0;
+}
+
+.service-list h1 {
+    margin: 15px 0;
+    border-bottom: 3px solid #7d1865;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+
+.service-list h2 {
+    padding: 8px 0;
+    cursor: default;
+}
+
+.service-list h2::after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid #c21e6d;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+.service-list h2:hover::after {
+    transform: scaleX(1);
+}
+
+.left-align {
+    float: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.service-image {
+    padding: 1rem;
+}
+
+.service-image img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 1.5px solid #3d135a;
+    box-shadow: 1px 1px 5px 0 #000000;
+    max-height: 75%;
+    max-width: 75%;
+    display: none;
+}
 
 /**
 *   Stylists
 */
 
+.stylists {
+    position: relative;
+}
 
+.stylists::before {
+    background-image: url(../images/stylist-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: blur(4px);
+}
+
+.stylists::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+    background-color: #302c2c;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.stylists .container {
+    padding: 1rem 0;
+    
+}
+
+.stylists .grid {
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+}
+
+.stylists .grid > *:first-child {
+    grid-row: 1 / span 3;
+}
+
+.stylists .grid > *:nth-child(2) {
+    grid-row: 1 / span 2;
+}
+
+.stylist-info {
+    margin: 2rem 4rem;
+}
+
+.stylist-headshot {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.stylist-headshot, .stylist-bio, .book-now {
+    box-shadow: 0px 0px 2px 1px #3a3535;
+    height: 100%;
+    background-color: rgba(160, 28, 112, 0.3);
+}
+
+.stylist-headshot img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+}
+
+.stylist-headshot h1 {
+    font-size: 2rem;
+}
+
+.stylist-bio {
+    padding: 1rem;
+    line-height: 2.5rem;
+    font-size: 1.75rem;
+}
+
+.book-now {
+    padding: 4rem 0;
+}
+
+.btn-book-bio {
+    margin: auto;
+    width: 40%;
+    padding: .6rem .8rem;
+}
 
 /**
 *   Book now
@@ -512,7 +665,7 @@ header .flex {
 
 .book {
     position: relative;
-    display: flex;
+    height: 100%;
 }
 
 .book::before {
@@ -658,6 +811,7 @@ iframe {
 */
 
 @media only screen and (max-width: 1225px) {
+    /* header and footer */
     header {
         height: 120px;
     }
@@ -676,19 +830,17 @@ iframe {
         justify-content: space-around;
     }
 
+    /* Featured Products and Products Page */
+
     .home .flex {
         flex-wrap: wrap;
     }
 
     .product-info {
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 
-    .left-third, .right-twothird {
-        
-        width: 50%;
-    }
+    
 }
 
 /**
