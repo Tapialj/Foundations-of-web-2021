@@ -1,0 +1,137 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background-color: #e34234;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 40px;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+.hamburger {
+    position: absolute;
+}
+
+.hamburger::before, .hamburger::after {
+    content: "";
+    display: block;
+    background-color: #ebebd3;
+    height: 3px;
+    width: 2em;
+    border-radius: 3px;
+    transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+}
+
+.hamburger::after {
+    transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+}
+
+.open .hamburger {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+    display: none;
+}
+
+.open .hamburger::after {
+    transform: translateY(-1px) rotate(-90deg);
+    -webkit-transform: translateY(-1px) rotate(-90deg);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    display: none;
+}
+
+nav ul.opening {
+    display: block;
+    height: 40px;
+}
+
+nav li {
+    border-bottom: 1px solid #f6f4e2;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #e4b363;
+}
+
+nav a:hover {
+
+}
+
+nav a:focus {
+
+}
+
+.site-nav-icon {
+    font-size: 1rem;
+    margin-right: 0;
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (min-width: 780px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        flex: 1 1 auto;
+    }
+
+    .logo {
+        margin: 0;
+        padding-left: 20px;
+        flex: 0 0 200px;
+    }
+
+    nav {
+
+    }
+
+    .site-nav-icon {
+        
+    }
+}

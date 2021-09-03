@@ -518,6 +518,7 @@ header .flex {
 
 .service-list {
     padding: 10px 0 25px 0;
+    text-transform: uppercase;
 }
 
 .service-list h1 {
