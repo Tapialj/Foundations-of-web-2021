@@ -127,6 +127,15 @@ header .flex {
     transform: scale(0.98);
 }
 
+.mobile-menu {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+}
+
 .primary-nav ul {
     display: flex;
     
@@ -134,7 +143,7 @@ header .flex {
 
 .primary-nav {
     font-size: 0.9rem;
-    z-index: 1;
+    z-index: 3;
 }
 
 .btn {
@@ -142,14 +151,14 @@ header .flex {
     text-align: center;
     border: 2px solid #5a1354;
     border-radius: 5px;
-    padding: .2rem .4rem;
-    margin-right: .5rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.5rem;
     box-shadow: 1px 1px 5px 0 #000000;
     background: linear-gradient(to right, #5a1354 50%, #ffffff 50%);
     background-size: 205% 100%;
     background-position: right bottom;
-    transition: background-position .5s ease-out;
-    -webkit-transition: background-position .5s ease-out;
+    transition: background-position 0.5s ease-out;
+    -webkit-transition: background-position 0.5s ease-out;
     cursor: pointer;
 }
 
@@ -158,12 +167,12 @@ header .flex {
     color: #e52065;
 }
 
-.btn > a {
+.btn a {
     text-decoration: none;
     color: #5a1354;
 }
 
-.btn > a:hover {
+.btn a:hover {
     color: #e52065;
 }
 
@@ -202,14 +211,6 @@ header .flex {
     padding: .1rem .4rem;
 }
 
-.special-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-
 /**
 *   Hero
 */
@@ -240,17 +241,16 @@ header .flex {
     transform: scale(.7);
 }
 
-.hero-content > span, .hero-content > h3 {
+.hero-content span, .hero-content h3 {
     position: absolute;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
     text-align: center;
     color: #e52065;
 }
 
-.hero-content > h3 {
+.hero-content h3 {
     font-size: 1.2rem;
     padding-top: 13rem;
     font-weight: 500;
@@ -276,7 +276,7 @@ header .flex {
     background-position: right bottom;
 }
 
-.hero-btn > a {
+.hero-btn a {
     color: #5a1354;
     font-size: 1.5rem;
     font-weight: 600;
@@ -676,7 +676,7 @@ header .flex {
 
 .book {
     position: relative;
-    height: 100vh;
+    
 }
 
 .book::before {
@@ -851,17 +851,134 @@ iframe {
         flex-direction: column; 
     }
 
-    
+    /* Stylists*/
+
+    .stylists .grid {
+        grid-template-rows: repeat(2, 1fr);
+        align-items: flex-start;
+    }
+
+    .stylist-info {
+        margin: 3rem 4rem;
+    }
+
+    .stylists .grid > *:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .stylists .grid > *:nth-child(2) {
+        grid-row: 2;
+    }
+
+    /*Services*/
+
+    .services .container {
+        padding: 0 40px;
+    }
+
+    /*Book*/
+
+    .book .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .book .container {
+        padding: 1.5rem 40px;
+    }
+
+    .book .information {
+        margin: 0 4rem;
+    }
+
+    .book form {
+        margin: 0 4rem;
+    }
+
 }
 
 /**
 *   Mobile Friendly
 */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
 
+    /*Mobile Menu, nav, and header*/
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile-menu #close {
+        display: none;   
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .menu-expand {
+        display: block;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    header {
+        height: 85px;
+    }
+
+    header .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .primary-nav {
+        margin-top: 14rem;
+    }
+
+    .menu-open #burger {
+        display: none;
+    }
+
+    .menu-open #close {
+        display: block;
+    }
+
+    .primary-nav ul {
+        flex-direction: column;
+        border: 2px solid #a01c70;
+        box-shadow: 1px 1px 7px 0 #000000;
+        background-color: rgba(194, 30, 109, 0.3);
+        padding: 7px;
+    }
+
+    .primary-nav .btn {
+        width: 100%;
+        padding: 0.4rem 0;
+    }
+
+    .primary-nav li {
+        margin-top: .5rem;
+    }
+
+    .primary-nav li:first-child {
+        margin: 0;
+    }
+
+
+    /*Hero and Featured*/
     .hero {
         height: 1000px;
+    }
+
+    .hero-content .container {
+        padding: 0;
     }
 
     .btn-container {
@@ -879,6 +996,27 @@ iframe {
 
     .featured-product {
         margin: 25px 0;
+    }
+
+    /*Products*/
+
+    /*Stylists*/
+
+    /*Services*/
+
+    /*Book*/
+
+    .book .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .info-container {
+        text-align: center;
+    }
+
+    .book form {
+        margin: 0 7rem
     }
 
 }

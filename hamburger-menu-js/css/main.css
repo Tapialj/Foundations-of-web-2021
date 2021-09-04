@@ -2,23 +2,23 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
 }
 
 html, body {
-    background-color: #fff;
-    margin: 0;
+    background-color: #333;
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
+    
 }
 
 .wrapper {
     width: 100%;
     max-width: 960px;
-    margin: 0;
+    position: relative;
 }
 
 nav {
-    margin: 0;
     padding: 0;
 }
 
@@ -26,7 +26,7 @@ nav {
     background-color: #e34234;
     color: #fff;
     font-size: 1.2rem;
-    height: 40px;
+    padding: .8rem 1rem;
 }
 
 .logo span {
@@ -37,7 +37,13 @@ nav {
     position: absolute;
 }
 
-.hamburger::before, .hamburger::after {
+.menu-toggle {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
     content: "";
     display: block;
     background-color: #ebebd3;
@@ -75,10 +81,13 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    display: none;
+    /*display: none;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-nav ul.opening {
+nav ul .opening {
     display: block;
     height: 40px;
 }
@@ -96,6 +105,11 @@ nav a {
     background-color: #e4b363;
 }
 
+/*
+padding-left: 3rem;
+this goes somewhere to padd from the left for menu
+*/
+
 nav a:hover {
 
 }
@@ -104,7 +118,7 @@ nav a:focus {
 
 }
 
-.site-nav-icon {
+.site-nav i {
     font-size: 1rem;
     margin-right: 0;
     width: 100%;
@@ -115,6 +129,10 @@ nav a:focus {
 @media only screen and (min-width: 780px) {
     .menu-toggle {
         display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 
     nav ul {
@@ -132,6 +150,6 @@ nav a:focus {
     }
 
     .site-nav-icon {
-        
+
     }
 }
