@@ -23,7 +23,7 @@ nav {
 }
 
 .logo {
-    background-color: #e34234;
+    background-color: #f04343;
     color: #fff;
     font-size: 1.2rem;
     padding: .8rem 1rem;
@@ -81,19 +81,20 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    /*display: none;*/
+    display: none;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-nav ul .opening {
+nav .opening {
     display: block;
     height: 40px;
 }
 
 nav li {
     border-bottom: 1px solid #f6f4e2;
+    padding: 1rem 3rem;
 }
 
 nav li:last-child {
@@ -102,41 +103,69 @@ nav li:last-child {
 
 nav a {
     text-decoration: none;
-    background-color: #e4b363;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-/*
-padding-left: 3rem;
-this goes somewhere to padd from the left for menu
-*/
-
 nav a:hover {
-
+    background-color: #E4B363;
 }
 
 nav a:focus {
-
+    background-color: #E4B363;
 }
 
 .site-nav i {
-    font-size: 1rem;
-    margin-right: 0;
-    width: 100%;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    width: 15px;
     text-align: left;
     color: rgba(255, 255, 255, 0.4);
 }
 
 @media only screen and (min-width: 780px) {
+    
     .menu-toggle {
         display: none;
     }
-
+    
+    .site-nav {
+        display: flex;
+    }
+    
     .desktop {
-        display: block;
+        display: flex;
     }
 
     nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        border-bottom: none;
+        padding: 0.8rem 0;
         flex: 1 1 auto;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #f04343;
+    }
+
+    nav a {
+        
+        padding: 0.8rem 0;
+        margin: 0 1rem;
+        background-color: #f04343;
+    }
+
+    nav a:hover {
+        background-color: rgba(255,255,255,.10);;
+    }
+    
+    nav a:focus {
+        background-color: rgba(255,255,255,.10);;
     }
 
     .logo {
@@ -145,11 +174,7 @@ nav a:focus {
         flex: 0 0 200px;
     }
 
-    nav {
-
-    }
-
-    .site-nav-icon {
-
+    .site-nav i {
+        display: none;
     }
 }
