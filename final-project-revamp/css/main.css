@@ -516,10 +516,6 @@ header .flex {
     z-index: -1;
 }
 
-.services .container {
-    padding: 0;
-}
-
 .services .grid {
     gap: 3rem;
 }
@@ -527,7 +523,7 @@ header .flex {
 .service-list {
     padding: 10px 0 25px 0;
     text-transform: uppercase;
-    margin-top: 15%;
+    margin-top: 15px;
 }
 
 .service-list h1 {
@@ -854,7 +850,7 @@ iframe {
     /* Stylists*/
 
     .stylists .grid {
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto auto;
         align-items: flex-start;
     }
 
@@ -869,6 +865,10 @@ iframe {
 
     .stylists .grid > *:nth-child(2) {
         grid-row: 2;
+    }
+
+    .stylist-headshot {
+        
     }
 
     /*Services*/
@@ -1000,9 +1000,24 @@ iframe {
 
     /*Products*/
 
+    .products .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
     /*Stylists*/
 
+    /*none needed currently*/
+
     /*Services*/
+
+    .service-image {
+        display: none;
+    }
+
+    .services .grid {
+        grid-template-columns: 1fr;
+    }
 
     /*Book*/
 

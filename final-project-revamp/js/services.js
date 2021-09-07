@@ -71,6 +71,9 @@ $(function ()
             case "part-hh-ll":
                 targetImgID += mouseText;
                 break;
+            case "balayage":
+                targetImgID += mouseText;
+                break;
             case "color":
                 targetImgID += mouseText;
                 break;
@@ -90,7 +93,7 @@ $(function ()
 
     $("h2").mouseout(function ()
     {
-        hideImageLater(currentImgID, 1000);
+        hideImageLater(currentImgID, 3000);
     });
 
 })
